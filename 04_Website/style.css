@@ -1,0 +1,41 @@
+/* Basic CSS styling for a clean student project */
+*{box-sizing:border-box}
+body{margin:0;padding:30px 15px;background:#f2f5f9;color:#263449;font-family:Arial,sans-serif}
+.page{max-width:900px;margin:0 auto}
+.top{display:flex;align-items:center;gap:14px;margin-bottom:25px}
+.brand-mark{width:48px;height:48px;line-height:48px;text-align:center;border-radius:12px;background:#315b83;color:white;font-weight:bold}
+h1,h2,p{margin-top:0}
+h1{margin-bottom:5px;font-size:25px;color:#234766}
+.tagline,.muted{color:#778494;margin-bottom:0;font-size:14px}
+.welcome{background:#315b83;color:white;padding:27px 30px;border-radius:12px;margin-bottom:20px}
+.welcome h2{font-size:25px;margin:8px 0}
+.welcome p{margin-bottom:0;line-height:1.5}
+.small-heading{font-size:11px;letter-spacing:2px;font-weight:bold;color:#d5e5f2}
+.panel{background:white;padding:22px;border:1px solid #e0e6ed;border-radius:10px;margin-bottom:18px}
+.panel h2{font-size:18px;color:#234766;margin-bottom:16px}
+.form-row{display:flex;gap:10px}
+input,select{padding:12px;border:1px solid #ccd5df;border-radius:6px;font-size:14px;background:white}
+input{flex:1;min-width:150px}
+select{width:170px;color:#46576a}
+button{border:0;border-radius:6px;padding:12px 17px;font-size:14px;cursor:pointer}
+.add-button{background:#315b83;color:white}
+.add-button:hover{background:#234766}
+#message{color:#b33a3a;font-size:13px;margin:10px 0 0}
+.summary-grid{display:flex;gap:15px;margin-bottom:18px}
+.summary-card{flex:1;background:white;border:1px solid #e0e6ed;border-radius:10px;padding:17px 20px}
+.summary-card p{color:#778494;font-size:13px;margin-bottom:8px}
+.summary-card strong{font-size:27px;color:#315b83}
+.list-heading{display:flex;align-items:center;justify-content:space-between}
+.list-heading h2{margin-bottom:5px}
+.today-label{background:#eaf1f7;color:#315b83;padding:7px 12px;border-radius:20px;font-size:11px;font-weight:bold;letter-spacing:1px}
+ul{list-style:none;padding:0;margin:18px 0 0}
+li.task-item{display:flex;align-items:center;gap:10px;padding:12px;margin-bottom:9px;background:#f7f9fb;border:1px solid #e6ebf0;border-radius:7px}
+.task-name{flex:1;font-size:14px}
+.completed{text-decoration:line-through;color:#8a96a3}
+.priority{font-size:11px;padding:5px 8px;border-radius:12px;background:#edf1f5;color:#526273}
+.complete-button{background:#e2eee8;color:#2e7051;padding:8px 10px}
+.delete-button{background:#f7e7e7;color:#a43d3d;padding:8px 10px}
+.empty-message{color:#8995a2;text-align:center;padding:22px;border:1px dashed #ccd5df;border-radius:7px;font-size:14px}
+footer{text-align:center;color:#8995a2;font-size:12px;padding:12px}
+footer span{padding:0 5px;color:#315b83}
+@media(max-width:650px){.form-row{flex-direction:column}select{width:100%}.summary-grid{flex-direction:column;gap:9px}li.task-item{flex-wrap:wrap}.task-name{min-width:60%}}

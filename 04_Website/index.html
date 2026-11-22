@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+<header class="top"><div class="brand-mark">DT</div><div><h1>Daily Task Manager</h1><p class="tagline">A simple place to plan your day</p></div></header>
+<section class="welcome"><p class="small-heading">MY DAILY PLANNER</p><h2>Make today productive.</h2><p>Add your tasks, set a priority and keep track of what you finish.</p></section>
+<section class="panel"><h2>Add a new task</h2><div class="form-row">
+<input type="text" id="taskInput" placeholder="What do you need to do?">
+<select id="taskPriority"><option value="High">High priority</option><option value="Medium" selected>Medium priority</option><option value="Low">Low priority</option></select>
+<button class="add-button" onclick="addTask()">+ Add Task</button></div><p id="message"></p></section>
+<section class="summary-grid">
+<div class="summary-card"><p>Total tasks</p><strong id="totalTasks">0</strong></div>
+<div class="summary-card"><p>Completed</p><strong id="completedTasks">0</strong></div>
+<div class="summary-card"><p>Pending</p><strong id="pendingTasks">0</strong></div></section>
+<section class="panel"><div class="list-heading"><div><h2>My task list</h2><p class="muted">Your tasks will appear here.</p></div><span class="today-label">TODAY</span></div>
+<ul id="taskList"><li class="empty-message">No tasks yet. Add your first task above.</li></ul></section>
+<footer>Daily Task Manager <span>•</span> CSD0111 Project Studio-I</footer>
+</div><script src="script.js"></script></body></html>
